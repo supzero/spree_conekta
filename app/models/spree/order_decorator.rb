@@ -9,7 +9,7 @@ module Spree
     def last_payment_details
       YAML.load payments.last.log_entries.last.details
     end
-    
+
     def last_payment_source
       payments.last.payment_method_source
     end
